@@ -29,7 +29,7 @@ const CartProvider = ({ childern }) => {
   const toggleHidden = () => setHidden(!hidden);
 
   useEffect(() => {
-    setCartItemsCount(getCartItemsCount());
+    setCartItemsCount(getCartItemsCount(cartItems));
   }, [cartItems]);
 
   return (
