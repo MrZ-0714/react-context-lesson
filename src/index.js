@@ -11,14 +11,14 @@ import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  <CartProvider>
-    <Provider store={store}>
+  <Provider store={store}>
+    <CartProvider>
       <BrowserRouter>
         <PersistGate persistor={persistor}>
           <App />
         </PersistGate>
       </BrowserRouter>
-    </Provider>
-  </CartProvider>,
+    </CartProvider>
+  </Provider>,
   document.getElementById("root")
 );
